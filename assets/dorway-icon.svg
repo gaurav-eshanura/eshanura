@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Dorway door-mark: midnight navy tile, white house-frame D, orange door, white latch. -->
+  <rect width="256" height="256" rx="48" fill="#081F45"/>
+  <path d="M128 52 L192 108 V196 a8 8 0 0 1 -8 8 H72 a8 8 0 0 1 -8 -8 V108 Z"
+        fill="none" stroke="#F8FAFC" stroke-width="14" stroke-linejoin="round"/>
+  <rect x="104" y="112" width="48" height="92" rx="4" fill="#F35F0C"/>
+  <circle cx="140" cy="160" r="6" fill="#FFFFFF"/>
+</svg>
