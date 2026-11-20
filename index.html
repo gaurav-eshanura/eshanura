@@ -15,7 +15,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eshanura.com/">
   <meta property="og:title" content="Eshanura Enterprises Private Limited | Honest Essentials for Everyday India">
-  <meta property="og:description" content="Do not just build products. Remove daily stress, restore dignity, and solve real human problems across India.">
+  <meta property="og:description" content="Do not build products for decoration. Remove daily stress, restore dignity, and solve real human problems across India.">
   <meta property="og:image" content="https://eshanura.com/assets/eshanura-logo.png">
   <meta property="og:site_name" content="Eshanura Enterprises">
   <meta property="og:locale" content="en_IN">
@@ -33,7 +33,7 @@
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Eshanura Enterprises Private Limited | Honest Essentials for Everyday India">
-  <meta name="twitter:description" content="Parent holding group for consumer manufacturing and digital utilities. Transforming everyday Indian lives.">
+  <meta name="twitter:description" content="Parent operating group for consumer manufacturing and digital utilities. Transforming everyday Indian lives.">
   <meta name="twitter:image" content="https://eshanura.com/assets/eshanura-logo.png">
 
   <!-- Schema.org Structured Data -->
@@ -48,7 +48,7 @@
         "alternateName": ["Eshanura", "Eshanura Group"],
         "url": "https://eshanura.com/",
         "logo": "https://eshanura.com/assets/eshanura-logo.png",
-        "description": "Diversified Indian operating house and parent holding company for consumer goods manufacturing, food staples, sustainable tableware, and digital utility platforms.",
+        "description": "Diversified Indian operating house and parent company for consumer goods manufacturing, food staples, sustainable tableware, and digital utility platforms.",
         "foundingLocation": {
           "@type": "Place",
           "name": "Lakhimpur-Kheri, Uttar Pradesh, India"
@@ -141,10 +141,10 @@
   }
   </script>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Editorial Serif + Modern Geometric Grotesque (Confetti Design Signature) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -154,6 +154,7 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"DM Serif Display"', 'serif'],
           },
           colors: {
             brandDark: '#0A0F1D',
@@ -161,6 +162,7 @@
             brandMuted: '#64748B',
             brandBorder: '#E2E8F0',
             brandBgLight: '#F8FAFC',
+            brandWarm: '#FDFBF7',
           }
         }
       }
@@ -179,6 +181,16 @@
       transform: translateY(-4px);
       box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
     }
+    .studio-packshot {
+      background: radial-gradient(circle at center, #FFFFFF 0%, #F8FAFC 100%);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .studio-packshot:hover img {
+      transform: scale(1.03);
+    }
+    .studio-packshot img {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
   </style>
 </head>
 <body class="bg-[#FCFDFF] text-brandDark font-sans antialiased selection:bg-blue-100 selection:text-blue-900 min-h-screen flex flex-col">
@@ -191,7 +203,7 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- Corporate Logo -->
-        <a href="#home" class="flex items-center gap-3 group shrink-0">
+        <a href="#home" class="flex items-center gap-3 group shrink-0 mr-4 xl:mr-6">
           <img src="assets/eshanura-logo.png" alt="Eshanura Logo" class="h-9 sm:h-10 w-auto object-contain">
           <div class="hidden xl:flex flex-col border-l border-slate-300 pl-3">
             <span class="text-[11px] font-bold tracking-wider uppercase text-slate-800">Enterprises Pvt. Ltd.</span>
@@ -200,12 +212,12 @@
         </a>
 
         <!-- Desktop Navigation Links: Executive Stature -->
-        <nav class="hidden lg:flex items-center gap-5 xl:gap-8 text-xs font-semibold uppercase tracking-wider text-slate-600">
+        <nav class="hidden lg:flex items-center gap-3.5 xl:gap-6 text-[11px] xl:text-xs font-semibold uppercase tracking-wider text-slate-600">
           <a href="#home" class="hover:text-blue-600 transition-colors whitespace-nowrap">Overview</a>
           <a href="#impact" class="hover:text-blue-600 transition-colors whitespace-nowrap">Operating Pillars</a>
-          <a href="#mission" class="hover:text-blue-600 transition-colors whitespace-nowrap">The Standard</a>
+          <a href="#audit" class="hover:text-blue-600 transition-colors whitespace-nowrap">Brand Audit</a>
           <a href="#portfolio" class="hover:text-blue-600 transition-colors whitespace-nowrap">Group Portfolio</a>
-          <a href="#standards" class="hover:text-blue-600 transition-colors whitespace-nowrap">Quality & Compliance</a>
+          <a href="#standards" class="hover:text-blue-600 transition-colors whitespace-nowrap">Quality Standards</a>
           <a href="#contact" class="hover:text-blue-600 transition-colors whitespace-nowrap">Headquarters</a>
         </nav>
 
@@ -238,10 +250,10 @@
     <div id="mobileMenu" class="lg:hidden hidden bg-white border-b border-brandBorder px-4 pt-3 pb-6 space-y-3">
       <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Corporate Overview</a>
       <a href="#impact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Operating Pillars</a>
-      <a href="#mission" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">The Eshanura Standard</a>
+      <a href="#audit" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Brand & Packaging Audit</a>
       <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Group Portfolio (8 Brands)</a>
-      <a href="#standards" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Quality & Compliance (ISO 9001)</a>
-      <a href="#partner" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Institutional & Trade Desk</a>
+      <a href="#standards" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Quality Standards (ISO 9001)</a>
+      <a href="#partner" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Commercial Trade Desk</a>
       <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Corporate Headquarters</a>
       <div class="pt-2 sm:hidden">
         <button onclick="openInquiryModal('General Trade & Distribution')" class="w-full py-3 rounded-lg bg-slate-900 text-white text-xs font-semibold tracking-wide uppercase text-center block">
@@ -253,7 +265,7 @@
 
   <main id="home" class="flex-grow">
     
-    <!-- Hero Section: Corporate Operating Stature -->
+    <!-- Hero Section: Editorial Stature & Confetti Design Discipline -->
     <section class="relative overflow-hidden pt-12 pb-16 lg:pt-16 lg:pb-20 bg-gradient-to-b from-white via-slate-50/60 to-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -262,36 +274,26 @@
           <!-- Corporate Registry Badge -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200/80 text-slate-700 text-xs font-semibold mb-6">
             <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-            <span>Eshanura Enterprises Private Limited • Corporate Operating Group</span>
+            <span>00 / CORPORATE OPERATING HOUSE • REGISTERED IN UTTAR PRADESH</span>
           </div>
 
-          <!-- Institutional Title & Scope -->
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5">
+          <!-- Institutional Title in Editorial Serif -->
+          <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-slate-900 tracking-tight leading-[1.15] mb-5 font-normal">
             Engineering Honest Essentials for Daily India.<br>
-            <span class="text-blue-600">Governed by Uncompromising Operational Rigor.</span>
+            <span class="text-blue-600 italic">Governed by Uncompromising Operational Rigor.</span>
           </h1>
 
-          <!-- Executive Mission: Human Relief Elevated -->
+          <!-- Executive Mission -->
           <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-8 max-w-3xl mx-auto">
             Eshanura Enterprises is a diversified Indian operating house managing eight high-conviction brands across consumer manufacturing, sustainable tableware, food staples, and digital utilities. We measure corporate performance by tangible relief in everyday lives: eliminating food adulteration, guaranteeing certified trade measurements, and restoring dignity to daily household essentials.
           </p>
 
-          <!-- Core Call to Action -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <a href="#portfolio" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold tracking-wider uppercase shadow-sm transition-all text-center">
-              Explore Group Portfolio (8 Brands)
-            </a>
-            <a href="#impact" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 text-xs font-bold tracking-wider uppercase shadow-xs transition-all text-center">
-              Our Operating Principles
-            </a>
-          </div>
-
-          <!-- Executive Governance & Operational Strip -->
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs text-left mb-12">
-            <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-3 md:pb-0 md:pr-4">
-              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">Corporate Stature</span>
-              <div class="text-xs font-extrabold text-slate-900">Eshanura Enterprises Pvt. Ltd.</div>
-              <div class="text-[11px] text-slate-500 font-medium">CIN Registered Entity</div>
+          <!-- Executive Verification Bar -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 sm:p-5 bg-white rounded-2xl border border-slate-200 shadow-xs mb-10 text-left">
+            <div class="border-b sm:border-b-0 sm:border-r border-slate-100 pb-3 sm:pb-0 sm:pr-4">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">Corporate Identity</span>
+              <div class="text-xs font-extrabold text-slate-900">CIN Registered</div>
+              <div class="text-[11px] text-slate-500 font-medium">Private Limited Enterprise</div>
             </div>
             <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-3 md:pb-0 md:pr-4">
               <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">Quality Management</span>
@@ -310,48 +312,51 @@
             </div>
           </div>
 
-          <!-- Quick Brand Strip with Real Product Packshots -->
+          <!-- Quick Brand Strip with Real Product Packshots Staged with Studio Precision -->
           <div class="bg-white rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-sm">
-            <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-3">8 Brands Built for Real Human Dignity</div>
+            <div class="flex items-center justify-between mb-3 px-1">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">8 Brands Built for Real Human Dignity</span>
+              <span class="text-[10px] font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">100% True-to-Label</span>
+            </div>
             <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3 items-center justify-center">
               
-              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                <img src="assets/nuts-cashews.webp" alt="The Nuts Company" class="h-10 w-auto object-contain mb-1">
+              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                <img src="assets/nuts-cashews.webp" alt="The Nuts Company" class="h-10 w-auto object-contain mb-1 transition-transform group-hover:scale-105">
                 <span class="text-[10px] font-bold text-slate-800">The Nuts Co.</span>
               </div>
 
-              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                <img src="assets/pasta-penne.png" alt="The Pasta Company" class="h-10 w-auto object-contain mb-1">
+              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                <img src="assets/pasta-penne.png" alt="The Pasta Company" class="h-10 w-auto object-contain mb-1 transition-transform group-hover:scale-105">
                 <span class="text-[10px] font-bold text-slate-800">The Pasta Co.</span>
               </div>
 
-              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                <img src="assets/easycare-logo.webp" alt="EasyCare" class="h-7 w-auto object-contain mb-1">
+              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                <img src="assets/easycare-logo.webp" alt="EasyCare" class="h-7 w-auto object-contain mb-1 transition-transform group-hover:scale-105">
                 <span class="text-[10px] font-bold text-slate-800">EasyCare</span>
               </div>
 
-              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                <img src="assets/paatra-logo.png" alt="Paatra" class="h-5 w-auto object-contain my-1">
+              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                <img src="assets/paatra-logo.png" alt="Paatra" class="h-5 w-auto object-contain my-1 transition-transform group-hover:scale-105">
                 <span class="text-[10px] font-bold text-slate-800">Paatra</span>
               </div>
 
-              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                <img src="assets/bajrangi-logo.png" alt="Bajrangi" class="h-7 w-auto object-contain mb-1">
+              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                <img src="assets/bajrangi-logo.png" alt="Bajrangi" class="h-7 w-auto object-contain mb-1 transition-transform group-hover:scale-105">
                 <span class="text-[10px] font-bold text-slate-800">Bajrangi</span>
               </div>
 
-              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                <img src="assets/dorway-icon.svg" alt="Dorway" class="h-7 w-7 object-contain mb-1">
+              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                <img src="assets/dorway-icon.svg" alt="Dorway" class="h-7 w-7 object-contain mb-1 transition-transform group-hover:scale-105">
                 <span class="text-[10px] font-bold text-slate-800">Dorway</span>
               </div>
 
-              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                <img src="assets/clyr-icon.svg" alt="CLYR" class="h-7 w-7 object-contain mb-1">
+              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                <img src="assets/clyr-icon.svg" alt="CLYR" class="h-7 w-7 object-contain mb-1 transition-transform group-hover:scale-105">
                 <span class="text-[10px] font-bold text-slate-800">CLYR</span>
               </div>
 
-              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors">
-                <img src="assets/promise-icon.png" alt="Promise" class="h-7 w-7 rounded-lg object-contain mb-1">
+              <div class="flex flex-col items-center p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                <img src="assets/promise-icon.png" alt="Promise" class="h-7 w-7 rounded-lg object-contain mb-1 transition-transform group-hover:scale-105">
                 <span class="text-[10px] font-bold text-slate-800">Promise</span>
               </div>
 
@@ -363,13 +368,13 @@
       </div>
     </section>
 
-    <!-- SECTION: EXECUTIVE OPERATING PILLARS (Disciplined Architecture) -->
+    <!-- SECTION: OPERATING PILLARS (Numbered Architecture) -->
     <section id="impact" class="py-20 bg-white border-t border-b border-slate-200/80">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="max-w-3xl mb-16">
           <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">Operating Principles & Human Relief</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight font-normal">
             Resolving Core Domestic & Trade Friction
           </h2>
           <p class="text-base text-slate-600 mt-4 leading-relaxed">
@@ -379,11 +384,11 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
-          <!-- Pillar 1: Supply Chain Integrity & Quantity Verification -->
+          <!-- Pillar 01: Supply Chain Integrity & Quantity Verification -->
           <div class="bg-slate-50/70 rounded-2xl p-7 border border-slate-200 flex flex-col justify-between hover:border-slate-300 transition-all">
             <div>
               <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Commercial Foodservice</span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">01 / Commercial Foodservice</span>
                 <span class="w-2 h-2 rounded-full bg-red-500"></span>
               </div>
               <h3 class="text-base font-bold text-slate-900 mb-2">Supply Chain Integrity & Quantity Verification</h3>
@@ -397,16 +402,16 @@
             </div>
           </div>
 
-          <!-- Pillar 2: Nutritional Standards in Daily Food Staples -->
+          <!-- Pillar 02: Nutritional Standards in Daily Food Staples -->
           <div class="bg-slate-50/70 rounded-2xl p-7 border border-slate-200 flex flex-col justify-between hover:border-slate-300 transition-all">
             <div>
               <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Packaged Nutrition</span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">02 / Packaged Nutrition</span>
                 <span class="w-2 h-2 rounded-full bg-amber-500"></span>
               </div>
               <h3 class="text-base font-bold text-slate-900 mb-2">Nutritional Standards in Daily Food Staples</h3>
               <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                Addressing the widespread prevalence of refined maida substitution and broken filler grades in daily household food. We mill exclusively with 100% durum wheat semolina and package single-origin California almonds under vacuum nitrogen seals to guarantee pure nutrition.
+                Addressing the widespread prevalence of refined maida substitution and broken filler grades in daily household food. We mill with 100% durum wheat semolina and package single-origin California almonds under vacuum nitrogen seals to guarantee pure nutrition.
               </p>
             </div>
             <div class="pt-4 border-t border-slate-200/80 text-xs font-semibold text-slate-800 flex items-center justify-between">
@@ -415,11 +420,11 @@
             </div>
           </div>
 
-          <!-- Pillar 3: Sanitation Hardware Longevity & Hygiene -->
+          <!-- Pillar 03: Sanitation Hardware Longevity & Hygiene -->
           <div class="bg-slate-50/70 rounded-2xl p-7 border border-slate-200 flex flex-col justify-between hover:border-slate-300 transition-all">
             <div>
               <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Household Care</span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">03 / Household Care</span>
                 <span class="w-2 h-2 rounded-full bg-teal-500"></span>
               </div>
               <h3 class="text-base font-bold text-slate-900 mb-2">Sanitation Hardware Longevity & Hygiene</h3>
@@ -428,17 +433,17 @@
               </p>
             </div>
             <div class="pt-4 border-t border-slate-200/80 text-xs font-semibold text-slate-800 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500">Operating Unit</span>
-              <span class="text-slate-900 font-bold">EasyCare Hardware</span>
+              <span class="text-[11px] text-slate-500">Operating Units</span>
+              <span class="text-slate-900 font-bold">EasyCare Brooms</span>
             </div>
           </div>
 
-          <!-- Pillar 4: Contractual & Financial Transparency -->
+          <!-- Pillar 04: Contractual & Financial Transparency -->
           <div class="bg-slate-50/70 rounded-2xl p-7 border border-slate-200 flex flex-col justify-between hover:border-slate-300 transition-all">
             <div>
               <div class="flex items-center justify-between mb-3">
-                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Digital Utilities</span>
-                <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500">04 / Digital Utilities</span>
+                <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
               </div>
               <h3 class="text-base font-bold text-slate-900 mb-2">Contractual & Financial Transparency</h3>
               <p class="text-xs text-slate-600 leading-relaxed mb-4">
@@ -456,66 +461,119 @@
       </div>
     </section>
 
-    <!-- SECTION: CORPORATE MISSION & GOVERNANCE PRINCIPLES -->
-    <section id="mission" class="py-20 bg-slate-50 border-b border-slate-200/80">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- SECTION: THE ESHANURA BRAND & PACKAGING AUDIT (Directly Derived from Confetti Design Principles) -->
+    <section id="audit" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+      
+      <!-- Subtle background ambient grid -->
+      <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="max-w-3xl mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-xs font-semibold mb-4">
+            <span>RETAIL VELOCITY & PACKAGING INTEGRITY</span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white tracking-tight font-normal mb-4">
+            The Eshanura 4-Point Brand & Packaging Audit
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            Confetti Design proves that packaging is a commercial engine, not decorative art. If a pack cannot earn its keep within three seconds on a retail shelf or on a 120-pixel quick-commerce screen, it fails the customer. We audit every SKU across four non-negotiable benchmarks before release.
+          </p>
+        </div>
+
+        <!-- 4 Audit Pillars Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           
-          <div>
-            <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">The Eshanura Standard</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
-              Institutional Governance Founded on Specification Truth
-            </h2>
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
-              Headquartered in Lakhimpur-Kheri, Uttar Pradesh, Eshanura Enterprises was founded on a strict corporate premise: that enduring enterprise value in India requires absolute adherence to stated specifications, verified batch weights, and radical transparency.
-            </p>
-            <p class="text-slate-700 text-sm sm:text-base leading-relaxed font-semibold">
-              Every production run across our manufacturing facilities and every codebase across our digital platforms conforms to ISO 9001:2015 quality management benchmarks, protecting trade partners and consumers alike.
-            </p>
+          <!-- Audit Point 1 -->
+          <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80 flex flex-col justify-between hover:border-slate-600 transition-all">
+            <div>
+              <div class="text-xs font-mono font-bold text-blue-400 mb-2">01 / 3-SECOND SHELF TEST</div>
+              <h3 class="text-base font-bold text-white mb-2">Hierarchy on Shelf & Screen</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                The eye moves across five distinct levels: Brand Mark, Category, Variant, 3 Core Proof Points, and Statutory Net Weight. Tested on physical supermarket shelves and 120x120px mobile thumbnails on Blinkit and Zepto.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-700 text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Instant Thumbnail Readability</span>
+            </div>
           </div>
 
-          <div class="space-y-4">
-            
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center shrink-0 font-bold text-sm">01</div>
-              <div>
-                <h4 class="text-sm font-bold text-slate-900 mb-1">Zero Measurement Variance</h4>
-                <p class="text-xs text-slate-600 leading-relaxed">Absolute specification truth across all wholesale cartons and retail pouches. If a lot declares 100 units or 100 grams, exactly 100 units of verified grade are delivered.</p>
-              </div>
+          <!-- Audit Point 2 -->
+          <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80 flex flex-col justify-between hover:border-slate-600 transition-all">
+            <div>
+              <div class="text-xs font-mono font-bold text-amber-400 mb-2">02 / ZERO-VARIANCE WEIGHT</div>
+              <h3 class="text-base font-bold text-white mb-2">Exact Specification Delivery</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Zero tolerance for the routine 5% to 15% hidden piece-count shortages prevalent in wholesale disposables. Every Bajrangi carton contains the exact stated count; every nuts pouch delivers 100% certified net weight.
+              </p>
             </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center shrink-0 font-bold text-sm">02</div>
-              <div>
-                <h4 class="text-sm font-bold text-slate-900 mb-1">Uncompromising Material Purity</h4>
-                <p class="text-xs text-slate-600 leading-relaxed">No refined maida in food staples, no broken dust filler in dry fruits, and no petrochemical fluorochemical coatings in sustainable tableware. We engineer clean products for human health.</p>
-              </div>
+            <div class="pt-4 border-t border-slate-700 text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>100% Certified Metrology</span>
             </div>
-
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs flex items-start gap-4">
-              <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center shrink-0 font-bold text-sm">03</div>
-              <div>
-                <h4 class="text-sm font-bold text-slate-900 mb-1">Ethical Digital Architecture</h4>
-                <p class="text-xs text-slate-600 leading-relaxed">Our consumer platforms protect user privacy through on-device data processing, transparent pricing, and zero advertisement monetization.</p>
-              </div>
-            </div>
-
           </div>
 
+          <!-- Audit Point 3 -->
+          <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80 flex flex-col justify-between hover:border-slate-600 transition-all">
+            <div>
+              <div class="text-xs font-mono font-bold text-emerald-400 mb-2">03 / THE REMOVAL TEST</div>
+              <h3 class="text-base font-bold text-white mb-2">Distinctive Brand Assets</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                If you strip the logo off an EasyCare broom, the moulded wall loop and fiber bound geometry identify it instantly. If you strip the logo from Paatra, the unbleached bagasse texture speaks for itself.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-700 text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Ownable Physical Assets</span>
+            </div>
+          </div>
+
+          <!-- Audit Point 4 -->
+          <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80 flex flex-col justify-between hover:border-slate-600 transition-all">
+            <div>
+              <div class="text-xs font-mono font-bold text-purple-400 mb-2">04 / CLIMATE & TRANSIT BARRIER</div>
+              <h3 class="text-base font-bold text-white mb-2">Packaging Durability Under Heat</h3>
+              <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                North Indian transit faces high monsoon humidity and summer heat. We engineer multi-layer foil pouches with airtight zip-locks and water-resistant virgin outer corrugated cartons that survive rough transport.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-700 text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Monsoon & Heat Tested</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Verification Banner with Direct WhatsApp Audit Action -->
+        <div class="bg-slate-800/90 rounded-2xl p-6 border border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-left">
+            <h4 class="text-sm font-bold text-white mb-1">Are you an FMCG Distributor or Institutional Buyer?</h4>
+            <p class="text-xs text-slate-400">Request our complete laboratory batch tests, packaging spec sheets, and retail rate cards.</p>
+          </div>
+          <div class="flex items-center gap-3 shrink-0">
+            <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%20Enterprises%2C%20I%20am%20interested%20in%20receiving%20your%20Brand%20and%20Packaging%20Audit%20Spec%20Sheet." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs tracking-wide shadow-md transition-all flex items-center gap-2">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Request Audit Spec via WhatsApp</span>
+            </a>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- SECTION: THE 8 OPERATING BRANDS (Full Human Story + Media + Specs) -->
+    <!-- SECTION: THE ESHANURA OPERATING PORTFOLIO (8 Brands Staged with Confetti's 5-Tier Packaging Hierarchy) -->
     <section id="portfolio" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">Group Operating Structure</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">The Eshanura Operating Portfolio</h2>
+            <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight font-normal">The Eshanura Operating Portfolio</h2>
             <p class="text-sm text-slate-600 mt-2">Eight established operating brands managed under two primary corporate divisions with verified product lines, industrial standards, and dedicated trade desks.</p>
           </div>
 
@@ -539,9 +597,10 @@
           <!-- 1. The Nuts Company -->
           <div class="brand-item fmcg bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between card-hover-effect">
             <div>
-              <div class="relative bg-amber-50/70 p-6 border-b border-slate-100 flex items-center justify-center">
-                <img src="assets/nuts-hero.webp" alt="The Nuts Company Products" class="h-44 w-auto object-contain rounded-lg">
-                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200">Packaged Foods</span>
+              <div class="relative studio-packshot p-6 border-b border-slate-100 flex items-center justify-center">
+                <img src="assets/nuts-hero.webp" alt="The Nuts Company Products" class="h-44 w-auto object-contain rounded-lg drop-shadow-md">
+                <span class="absolute top-3 left-3 text-[10px] font-mono font-bold text-slate-400">01 / PACKAGED FOODS</span>
+                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200">Single-Origin</span>
               </div>
 
               <div class="p-6">
@@ -551,12 +610,20 @@
                 </div>
                 <p class="text-xs font-semibold text-amber-700 mb-3">"Real Nuts for Real People."</p>
                 
+                <!-- Front-of-Pack 3 Proof Points (Confetti Rule) -->
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded">Zero Filler Blends</span>
+                  <span class="text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded">W320 Grade Cashews</span>
+                  <span class="text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded">Nitrogen Flushed</span>
+                </div>
+
                 <!-- Operational Mission -->
                 <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
-                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Consumer Relief:</strong>
+                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Relief:</strong>
                   Eliminating filler grades, broken dust, and loose-market adulteration by delivering single-origin California almonds and whole W320 cashews in nitrogen-sealed convenience packaging.
                 </div>
 
+                <!-- Product Formats & Pack Sizes -->
                 <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4">
                   <div class="text-[11px] font-bold text-slate-800 mb-2">Pouch Formats & Products:</div>
                   <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-3">
@@ -577,8 +644,8 @@
                     </div>
                   </div>
                   <div class="text-[10px] text-slate-500 flex justify-between px-1">
-                    <span><strong>Packs:</strong> 20g, 50g, 100g, 200g</span>
-                    <span>Resealable Pouches</span>
+                    <span><strong>SKU Packs:</strong> 20g, 50g, 100g, 200g</span>
+                    <span>Resealable Multi-Layer</span>
                   </div>
                 </div>
 
@@ -608,9 +675,10 @@
           <!-- 2. The Pasta Company -->
           <div class="brand-item fmcg bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between card-hover-effect">
             <div>
-              <div class="relative bg-amber-50/70 p-6 border-b border-slate-100 flex items-center justify-center">
-                <img src="assets/pasta-hero.webp" alt="The Pasta Company Range" class="h-44 w-auto object-contain rounded-lg">
-                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200">Food Staples</span>
+              <div class="relative studio-packshot p-6 border-b border-slate-100 flex items-center justify-center">
+                <img src="assets/pasta-hero.webp" alt="The Pasta Company Range" class="h-44 w-auto object-contain rounded-lg drop-shadow-md">
+                <span class="absolute top-3 left-3 text-[10px] font-mono font-bold text-slate-400">02 / FOOD STAPLES</span>
+                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-100 text-amber-800 border border-amber-200">100% Durum</span>
               </div>
 
               <div class="p-6">
@@ -620,41 +688,48 @@
                 </div>
                 <p class="text-xs font-semibold text-amber-700 mb-3">"Roz ka Khaana, Thoda Italian, Thoda Desi."</p>
                 
-                <!-- Operational Mission -->
-                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
-                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Consumer Relief:</strong>
-                  Supplying Indian households with nutritious 100% durum wheat semolina staples, strictly manufactured without refined maida, artificial brighteners, or chemical preservatives.
+                <!-- Front-of-Pack 3 Proof Points -->
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded">100% Durum Wheat</span>
+                  <span class="text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded">Zero Maida</span>
+                  <span class="text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200 px-2 py-0.5 rounded">Bronze-Die Cut</span>
                 </div>
 
+                <!-- Operational Mission -->
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
+                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Relief:</strong>
+                  Supplying Indian households with nutritious 100% durum wheat semolina staples, manufactured without refined maida, artificial brighteners, or chemical preservatives.
+                </div>
+
+                <!-- Product Formats & Shapes -->
                 <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4">
                   <div class="text-[11px] font-bold text-slate-800 mb-2">Shapes & Formats (100g, 200g, 500g):</div>
                   <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-3">
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/pasta-penne.png" alt="Desi Penne" class="h-10 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">Desi Penne</div>
-                      <div class="text-slate-500">From ₹30</div>
+                      <img src="assets/pasta-penne.png" alt="Penne" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Penne Rigate</div>
+                      <div class="text-slate-500">Sauce Gripping</div>
                     </div>
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/pasta-fusilli.png" alt="Masala Fusilli" class="h-10 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">Masala Fusilli</div>
-                      <div class="text-slate-500">From ₹35</div>
+                      <img src="assets/pasta-fusilli.png" alt="Fusilli" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Fusilli Spirals</div>
+                      <div class="text-slate-500">Three-Fin Spiral</div>
                     </div>
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/pasta-macaroni.png" alt="Classic Macaroni" class="h-10 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">Macaroni</div>
-                      <div class="text-slate-500">From ₹30</div>
+                      <img src="assets/pasta-macaroni.png" alt="Macaroni" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Elbow Macaroni</div>
+                      <div class="text-slate-500">Desi Masala Fit</div>
                     </div>
                   </div>
                   <div class="text-[10px] text-slate-500 flex justify-between px-1">
-                    <span>Also: Spaghetti & Pasta Mix</span>
-                    <span>100% Durum Wheat</span>
+                    <span><strong>Shelf Life:</strong> 12 Months</span>
+                    <span>Moisture-Locked Pillow Pack</span>
                   </div>
                 </div>
 
                 <div class="flex flex-wrap gap-2 text-[10px] font-semibold text-slate-600 mb-2">
-                  <a href="https://pasta.eshanura.com/pasta.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">All Pasta</a>
-                  <a href="https://pasta.eshanura.com/recipes.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Desi Recipes</a>
-                  <a href="https://pasta.eshanura.com/retailers.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Kirana Trade</a>
+                  <a href="https://pasta.eshanura.com/products.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Pasta Shapes</a>
+                  <a href="https://pasta.eshanura.com/distribution.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Trade Inquiries</a>
                 </div>
               </div>
             </div>
@@ -665,7 +740,7 @@
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
               <div class="flex items-center gap-3">
-                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20The%20Pasta%20Company%20wholesale%20rates." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
+                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20The%20Pasta%20Company%20distributorship%20and%20rates." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]\" title="Direct WhatsApp Inquiry">
                   <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                   <span>WhatsApp</span>
                 </a>
@@ -674,13 +749,13 @@
             </div>
           </div>
 
-          <!-- 3. EasyCare -->
+          <!-- 3. EasyCare Brooms -->
           <div class="brand-item fmcg bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between card-hover-effect">
             <div>
-              <div class="relative bg-teal-50/70 p-6 border-b border-slate-100 flex items-center justify-between">
-                <img src="assets/easycare-logo.webp" alt="EasyCare Logo" class="h-10 w-auto object-contain">
-                <img src="assets/easycare-loop.svg" alt="Moulded Hanging Loop Diagram" class="h-12 w-auto object-contain opacity-80">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-teal-100 text-teal-800 border border-teal-200">Household Care</span>
+              <div class="relative studio-packshot p-6 border-b border-slate-100 flex items-center justify-center">
+                <img src="assets/easycare-lifestyle.webp" alt="EasyCare Brooms" class="h-44 w-auto object-contain rounded-lg drop-shadow-md">
+                <span class="absolute top-3 left-3 text-[10px] font-mono font-bold text-slate-400">03 / HOUSEHOLD CARE</span>
+                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-teal-100 text-teal-800 border border-teal-200">Patented Hang Loop</span>
               </div>
 
               <div class="p-6">
@@ -688,41 +763,50 @@
                   <h3 class="text-xl font-bold text-slate-900">EasyCare</h3>
                   <span class="text-[11px] font-medium text-slate-400">easycare.eshanura.com</span>
                 </div>
-                <p class="text-xs font-semibold text-teal-700 mb-3">"Ab jhadu padi nahi rahegi, shaan se khadi rahegi."</p>
+                <p class="text-xs font-semibold text-teal-700 mb-3">"Har Kona Chamke, Har Din Aasan."</p>
                 
-                <!-- Operational Mission -->
-                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
-                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Consumer Relief:</strong>
-                  Preventing domestic sanitation breakdown caused by damp floors through an integrated wall-hanging loop system and zero-shed natural grass fibers delivering 3x domestic durability.
+                <!-- Front-of-Pack 3 Proof Points -->
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="text-[10px] font-semibold bg-teal-50 text-teal-800 border border-teal-200 px-2 py-0.5 rounded">Moulded Hang Loop</span>
+                  <span class="text-[10px] font-semibold bg-teal-50 text-teal-800 border border-teal-200 px-2 py-0.5 rounded">Zero Water-Rot</span>
+                  <span class="text-[10px] font-semibold bg-teal-50 text-teal-800 border border-teal-200 px-2 py-0.5 rounded">3x Fiber Life</span>
                 </div>
 
+                <!-- Operational Mission -->
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
+                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Relief:</strong>
+                  Solving broom fiber rot and premature shedding caused by damp floor storage. Engineered with an integrated moulded hanging loop that keeps fiber heads elevated and dry.
+                </div>
+
+                <!-- Broom Range -->
                 <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4">
-                  <div class="text-[11px] font-bold text-slate-800 mb-2">Three Brooms (Shown to Scale):</div>
+                  <div class="text-[11px] font-bold text-slate-800 mb-2">Household Sanitation Range:</div>
                   <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-3">
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/easycare-angan.webp" alt="ANGAN" class="h-16 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">ANGAN (42″)</div>
-                      <div class="text-slate-500">Coconut Broom</div>
+                      <img src="assets/easycare-titli.webp" alt="Titli Broom" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Titli 500g</div>
+                      <div class="text-slate-500">Indoor Fine Grass</div>
                     </div>
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/easycare-indi.webp" alt="INDI" class="h-16 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">INDI (42″)</div>
-                      <div class="text-slate-500">Indonesian Sticks</div>
+                      <img src="assets/easycare-angan.webp" alt="Angan Broom" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Angan 550g</div>
+                      <div class="text-slate-500">Courtyard Heavy</div>
                     </div>
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/easycare-titli.webp" alt="TITLI" class="h-16 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">TITLI (52″)</div>
-                      <div class="text-slate-500">Natural Grass</div>
+                      <img src="assets/easycare-indi.webp" alt="Indi Broom" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Indi 400g</div>
+                      <div class="text-slate-500">Daily Household</div>
                     </div>
                   </div>
-                  <div class="text-[10px] text-slate-500 text-center font-medium">
-                    Integrated Moulded Loop • Tight Fibres • Comfort Grip
+                  <div class="text-[10px] text-slate-500 flex justify-between px-1">
+                    <span><strong>Substrate:</strong> Assam Grass + Virgin PP</span>
+                    <span>Wall Hang Ready</span>
                   </div>
                 </div>
 
                 <div class="flex flex-wrap gap-2 text-[10px] font-semibold text-slate-600 mb-2">
-                  <a href="https://easycare.eshanura.com/stockist.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Stockist Enquiries</a>
-                  <a href="tel:+919839436346" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Trade Desk Call</a>
+                  <a href="https://easycare.eshanura.com/products.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Broom Range</a>
+                  <a href="https://easycare.eshanura.com/technology.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Hanging Loop Tech</a>
                 </div>
               </div>
             </div>
@@ -733,70 +817,73 @@
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
               <div class="flex items-center gap-3">
-                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20EasyCare%20Broom%20distribution%20and%20rates." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
+                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20EasyCare%20broom%20wholesale%20rates." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
                   <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                   <span>WhatsApp</span>
                 </a>
-                <button onclick="openInquiryModal('EasyCare Wholesale & Stockist')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Wholesale Terms</button>
+                <button onclick="openInquiryModal('EasyCare Distribution')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Rate Card</button>
               </div>
             </div>
           </div>
 
-          <!-- 4. Paatra -->
+          <!-- 4. Paatra Eco-Serveware -->
           <div class="brand-item fmcg bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between card-hover-effect">
             <div>
-              <div class="relative bg-emerald-50/70 p-6 border-b border-slate-100 flex items-center justify-center">
-                <img src="assets/paatra-range.webp" alt="Paatra Sustainable Serveware" class="h-44 w-auto object-contain rounded-lg">
-                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-200">Sustainable Serveware</span>
+              <div class="relative studio-packshot p-6 border-b border-slate-100 flex items-center justify-center">
+                <img src="assets/paatra-range.webp" alt="Paatra Eco Serveware Range" class="h-44 w-auto object-contain rounded-lg drop-shadow-md">
+                <span class="absolute top-3 left-3 text-[10px] font-mono font-bold text-slate-400">04 / SUSTAINABLE TABLEWARE</span>
+                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-200">100% Bagasse</span>
               </div>
 
               <div class="p-6">
                 <div class="flex items-center justify-between mb-1">
-                  <img src="assets/paatra-logo.png" alt="Paatra Logo" class="h-6 w-auto object-contain">
+                  <h3 class="text-xl font-bold text-slate-900">Paatra</h3>
                   <span class="text-[11px] font-medium text-slate-400">paatra.web.app</span>
                 </div>
-                <p class="text-xs font-semibold text-emerald-700 mb-3">"The Plate Comes First. Sustain · Serve · Share."</p>
+                <p class="text-xs font-semibold text-emerald-700 mb-3">"Rooted in Earth, Crafted for Occasions."</p>
                 
-                <!-- Operational Mission -->
-                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
-                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Consumer Relief:</strong>
-                  Replacing single-use plastic and collapsing paper plates with rigid sugarcane bagasse tableware that withstands boiling gravies without oil seepage or thermal warping.
+                <!-- Front-of-Pack 3 Proof Points -->
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="text-[10px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">100% Sugarcane Bagasse</span>
+                  <span class="text-[10px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Zero Plastic Lining</span>
+                  <span class="text-[10px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Hot Curry Resistant</span>
                 </div>
 
+                <!-- Operational Mission -->
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
+                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Relief:</strong>
+                  Replacing single-use petrochemical plastics with certified biodegradable sugarcane bagasse, pressed leaf bowls, ripple cups, and birchwood cutlery that break down naturally.
+                </div>
+
+                <!-- Serveware Range -->
                 <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4">
-                  <div class="text-[11px] font-bold text-slate-800 mb-2">Four Popular Lines (From 42 Products):</div>
-                  <div class="grid grid-cols-4 gap-1.5 text-center text-[9px] mb-3">
-                    <div class="bg-white p-1.5 rounded-lg border border-slate-200">
-                      <img src="assets/paatra-plate.webp" alt="Round Plate 9 inch" class="h-8 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">9″ Plate</div>
-                      <div class="text-slate-500">₹299 / 50pk</div>
+                  <div class="text-[11px] font-bold text-slate-800 mb-2">Sustainable Product Lines:</div>
+                  <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-3">
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <img src="assets/paatra-plate.webp" alt="Bagasse Plates" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Bagasse Plates</div>
+                      <div class="text-slate-500">3-5 Compartment</div>
                     </div>
-                    <div class="bg-white p-1.5 rounded-lg border border-slate-200">
-                      <img src="assets/paatra-bowl.webp" alt="Round Bowl 500 ml" class="h-8 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">500ml Bowl</div>
-                      <div class="text-slate-500">₹399 / 50pk</div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <img src="assets/paatra-cup.webp" alt="Ripple Cups" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Ripple Cups</div>
+                      <div class="text-slate-500">Thermal Wall</div>
                     </div>
-                    <div class="bg-white p-1.5 rounded-lg border border-slate-200">
-                      <img src="assets/paatra-cup.webp" alt="Ripple Cup 250 ml" class="h-8 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">250ml Cup</div>
-                      <div class="text-slate-500">₹99 / 50pk</div>
-                    </div>
-                    <div class="bg-white p-1.5 rounded-lg border border-slate-200">
-                      <img src="assets/paatra-fork.webp" alt="Wooden Fork 160 mm" class="h-8 mx-auto object-contain mb-1">
-                      <div class="font-bold text-slate-800">Birch Fork</div>
-                      <div class="text-slate-500">₹199 / 100pk</div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <img src="assets/paatra-fork.webp" alt="Birchwood Cutlery" class="h-10 mx-auto object-contain mb-1">
+                      <div class="font-bold text-slate-800">Birch Cutlery</div>
+                      <div class="text-slate-500">Splinter Free</div>
                     </div>
                   </div>
                   <div class="text-[10px] text-slate-500 flex justify-between px-1">
-                    <span>42 Products Made in India</span>
-                    <span>No Plastic Lining</span>
+                    <span><strong>Certification:</strong> Food-Grade ISO 9001</span>
+                    <span>100% Home Compostable</span>
                   </div>
                 </div>
 
                 <div class="flex flex-wrap gap-2 text-[10px] font-semibold text-slate-600 mb-2">
-                  <a href="https://paatra.web.app/shop/" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Explore Shop</a>
-                  <a href="https://paatra.web.app/business/" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Stockist Portal</a>
-                  <a href="https://paatra.web.app/about/" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">The Story</a>
+                  <a href="https://paatra.web.app/catalog.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Product Catalog</a>
+                  <a href="https://paatra.web.app/sustainability.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Compost Testing</a>
                 </div>
               </div>
             </div>
@@ -807,11 +894,11 @@
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
               <div class="flex items-center gap-3">
-                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20Paatra%20bagasse%20tableware%20bulk%20orders." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
+                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20Paatra%20sustainable%20serveware%20bulk%20orders." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
                   <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                   <span>WhatsApp</span>
                 </a>
-                <button onclick="openInquiryModal('Paatra Stockist & Trade')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Rate Card</button>
+                <button onclick="openInquiryModal('Paatra Commercial Supply')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Rate Card</button>
               </div>
             </div>
           </div>
@@ -819,10 +906,10 @@
           <!-- 5. Bajrangi Disposables -->
           <div class="brand-item fmcg bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between card-hover-effect">
             <div>
-              <div class="relative bg-red-50/70 p-6 border-b border-slate-100 flex items-center justify-between">
-                <img src="assets/bajrangi-logo.png" alt="Bajrangi Logo" class="h-10 w-auto object-contain">
-                <img src="assets/bajrangi-sticker.png" alt="Annapurna Thaal Sticker" class="h-12 w-auto object-contain">
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-red-100 text-red-800 border border-red-200">Foodservice Packaging</span>
+              <div class="relative studio-packshot p-6 border-b border-slate-100 flex items-center justify-center">
+                <img src="assets/bajrangi-hero.png" alt="Bajrangi Disposables Range" class="h-44 w-auto object-contain rounded-lg drop-shadow-md">
+                <span class="absolute top-3 left-3 text-[10px] font-mono font-bold text-slate-400">05 / COMMERCIAL FOODSERVICE</span>
+                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-red-100 text-red-800 border border-red-200">Exact Piece Count</span>
               </div>
 
               <div class="p-6">
@@ -830,43 +917,50 @@
                   <h3 class="text-xl font-bold text-slate-900">Bajrangi Disposables</h3>
                   <span class="text-[11px] font-medium text-slate-400">bajrangi-disposables.web.app</span>
                 </div>
-                <p class="text-xs font-semibold text-red-700 mb-3">"पूरी गिनती, फुल साइज | अन्नपूर्णा भोजन थाल"</p>
+                <p class="text-xs font-semibold text-red-700 mb-3">"Ghar Ka Samaroh, Khushiyon Ki Shuruat."</p>
                 
-                <!-- Operational Mission -->
-                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
-                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Consumer Relief:</strong>
-                  Protecting commercial catering operators and foodservice businesses through 100% verified carton counts, leakproof barrier liners, and certified brim capacities.
+                <!-- Front-of-Pack 3 Proof Points -->
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="text-[10px] font-semibold bg-red-50 text-red-800 border border-red-200 px-2 py-0.5 rounded">100% Stated Piece Count</span>
+                  <span class="text-[10px] font-semibold bg-red-50 text-red-800 border border-red-200 px-2 py-0.5 rounded">Zero Under-Dispensing</span>
+                  <span class="text-[10px] font-semibold bg-red-50 text-red-800 border border-red-200 px-2 py-0.5 rounded">Deep Compartment</span>
                 </div>
 
+                <!-- Operational Mission -->
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
+                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Relief:</strong>
+                  Guaranteed full piece counts on every carton and pack. Eliminating the trade practice of short-packing 85 pieces labeled as 100, protecting caterers, events, and family gatherings.
+                </div>
+
+                <!-- Foodservice Range -->
                 <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4">
-                  <div class="text-[11px] font-bold text-slate-800 mb-2">Three Core Lines:</div>
+                  <div class="text-[11px] font-bold text-slate-800 mb-2">Commercial Foodservice Lines:</div>
                   <div class="grid grid-cols-3 gap-2 text-center text-[10px] mb-3">
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/bajrangi-dona.jpg" alt="Dona Range" class="h-10 mx-auto object-contain rounded mb-1">
-                      <div class="font-bold text-slate-800">Dona Range</div>
-                      <div class="text-slate-500">Batasha to 8″</div>
+                      <img src="assets/bajrangi-thali.jpg" alt="Annapurna Thali" class="h-10 mx-auto object-contain mb-1 rounded">
+                      <div class="font-bold text-slate-800">Annapurna Thali</div>
+                      <div class="text-slate-500">Deep 5-Slot Feast</div>
                     </div>
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/bajrangi-plate.jpg" alt="Plate Range" class="h-10 mx-auto object-contain rounded mb-1">
-                      <div class="font-bold text-slate-800">Plate Range</div>
-                      <div class="text-slate-500">7″ to 12″ Sizes</div>
+                      <img src="assets/bajrangi-dona.jpg" alt="Silver Donas" class="h-10 mx-auto object-contain mb-1 rounded">
+                      <div class="font-bold text-slate-800">Curry Donas</div>
+                      <div class="text-slate-500">Leak-Resistant</div>
                     </div>
                     <div class="bg-white p-2 rounded-lg border border-slate-200">
-                      <img src="assets/bajrangi-thali.jpg" alt="Thali Set" class="h-10 mx-auto object-contain rounded mb-1">
-                      <div class="font-bold text-slate-800">Thali Sets</div>
-                      <div class="text-slate-500">25+50+25 Pack</div>
+                      <img src="assets/bajrangi-plate.jpg" alt="Buffet Plates" class="h-10 mx-auto object-contain mb-1 rounded">
+                      <div class="font-bold text-slate-800">Buffet Plates</div>
+                      <div class="text-slate-500">Heavy GSM Rigid</div>
                     </div>
                   </div>
-                  <div class="text-[10px] text-slate-500 text-center font-medium">
-                    Hotels • Caterers • Canteens • Dhabas • Kiranas
+                  <div class="text-[10px] text-slate-500 flex justify-between px-1">
+                    <span><strong>Carton Packing:</strong> Shrink Wrapped Lots</span>
+                    <span>Exact Piece Guarantee</span>
                   </div>
                 </div>
 
                 <div class="flex flex-wrap gap-2 text-[10px] font-semibold text-slate-600 mb-2">
-                  <a href="https://bajrangi-disposables.web.app/range-dona.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Dona Range</a>
-                  <a href="https://bajrangi-disposables.web.app/range-plates.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Plate Range</a>
-                  <a href="https://bajrangi-disposables.web.app/range-thali.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Thali Set</a>
-                  <a href="https://bajrangi-disposables.web.app/distributors.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Distributor Inquiry</a>
+                  <a href="https://bajrangi-disposables.web.app/products.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Wholesale Items</a>
+                  <a href="https://bajrangi-disposables.web.app/caterers.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Catering Supply</a>
                 </div>
               </div>
             </div>
@@ -877,27 +971,22 @@
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
               <div class="flex items-center gap-3">
-                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20Bajrangi%20Disposables%20paper%20cups%20bulk%20rates." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
+                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20Bajrangi%20Disposables%20carton%20rates." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
                   <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                   <span>WhatsApp</span>
                 </a>
-                <button onclick="openInquiryModal('Bajrangi Distributor Inquiry')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Wholesale MOQ</button>
+                <button onclick="openInquiryModal('Bajrangi Disposables Wholesale')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Rate Card</button>
               </div>
             </div>
           </div>
 
-          <!-- 6. Dorway -->
+          <!-- 6. Dorway Property Leasing -->
           <div class="brand-item tech bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between card-hover-effect">
             <div>
-              <div class="relative bg-blue-900 p-6 border-b border-slate-100 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <img src="assets/dorway-icon.svg" alt="Dorway Logo" class="h-12 w-12 object-contain">
-                  <div>
-                    <div class="text-white font-extrabold text-xl tracking-tight">Dorway</div>
-                    <div class="text-blue-200 text-xs">Renting Simplified</div>
-                  </div>
-                </div>
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-800 text-white border border-blue-700">PropTech Utility</span>
+              <div class="relative studio-packshot p-6 border-b border-slate-100 flex items-center justify-center">
+                <img src="assets/dorway-icon.svg" alt="Dorway Platform" class="h-32 w-32 object-contain rounded-2xl drop-shadow-md">
+                <span class="absolute top-3 left-3 text-[10px] font-mono font-bold text-slate-400">06 / PROPTECH & LEASING</span>
+                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-100 text-blue-800 border border-blue-200">Zero Brokerage</span>
               </div>
 
               <div class="p-6">
@@ -905,34 +994,43 @@
                   <h3 class="text-xl font-bold text-slate-900">Dorway</h3>
                   <span class="text-[11px] font-medium text-slate-400">dorway.in</span>
                 </div>
-                <p class="text-xs font-semibold text-blue-700 mb-3">"Agla ghar paayein, bina dalal ke. Saaf kiraya. Honest ghar."</p>
+                <p class="text-xs font-semibold text-blue-700 mb-3">"Your Door to Direct Living."</p>
                 
-                <!-- Operational Mission -->
-                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
-                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Consumer Relief:</strong>
-                  Eliminating predatory intermediary brokerage commissions in residential housing through direct owner QR discovery, standardized tenancy terms, and automated utility split billing.
+                <!-- Front-of-Interface 3 Proof Points -->
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="text-[10px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 px-2 py-0.5 rounded">Zero Middleman Brokerage</span>
+                  <span class="text-[10px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 px-2 py-0.5 rounded">Gate QR Posters</span>
+                  <span class="text-[10px] font-semibold bg-blue-50 text-blue-800 border border-blue-200 px-2 py-0.5 rounded">Sub-Meter Utility Math</span>
                 </div>
 
-                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4 space-y-2 text-[11px] text-slate-700">
-                  <div class="flex items-center justify-between border-b border-slate-200 pb-1.5">
-                    <span class="font-semibold text-slate-800">Smart Gate QR Poster:</span>
-                    <span class="text-emerald-700 font-bold">Printable A4 (Free)</span>
+                <!-- Operational Mission -->
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
+                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Relief:</strong>
+                  Eliminating broker rent gouging in Tier-2 and Tier-3 rental markets through A4 Smart Gate QR Posters, instant video tours, and clear sub-meter electricity splitting.
+                </div>
+
+                <!-- Digital Utilities -->
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4">
+                  <div class="text-[11px] font-bold text-slate-800 mb-2">Leasing Utilities & Modules:</div>
+                  <div class="grid grid-cols-2 gap-2 text-[10px] mb-2">
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <div class="font-bold text-slate-800">Gate QR Poster</div>
+                      <div class="text-slate-500">A4 Print-Ready Direct Scan</div>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <div class="font-bold text-slate-800">Sub-Meter Ledger</div>
+                      <div class="text-slate-500">Dispute-Free Electricity Split</div>
+                    </div>
                   </div>
-                  <div class="flex items-center justify-between border-b border-slate-200 pb-1.5">
-                    <span class="font-semibold text-slate-800">Tenant-to-Owner Match:</span>
-                    <span class="text-emerald-700 font-bold">0% Brokerage</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="font-semibold text-slate-800">11-Month Agreements:</span>
-                    <span class="text-slate-600 font-medium">State Stamp Duty Ready</span>
+                  <div class="text-[10px] text-slate-500 flex justify-between px-1">
+                    <span><strong>Platform:</strong> Web App & Cloud System</span>
+                    <span>100% Direct Owner</span>
                   </div>
                 </div>
 
                 <div class="flex flex-wrap gap-2 text-[10px] font-semibold text-slate-600 mb-2">
-                  <a href="https://dorway.in/search" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Ghar Dhoondho</a>
-                  <a href="https://dorway.in/to-let-poster" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Gate Poster Tool</a>
-                  <a href="https://dorway.in/agreement-builder" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Agreement Builder</a>
-                  <a href="https://dorway.in/calculators" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Sub-Meter Split</a>
+                  <a href="https://dorway.in/features.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Features</a>
+                  <a href="https://dorway.in/landlords.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">For Landlords</a>
                 </div>
               </div>
             </div>
@@ -942,25 +1040,23 @@
                 <span>Platform</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
-              <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20Dorway%20rental%20platform%20listings." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
-                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp</span>
-              </a>
+              <div class="flex items-center gap-3">
+                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20learn%20more%20about%20the%20Dorway%20property%20platform." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>WhatsApp</span>
+                </a>
+                <button onclick="openInquiryModal('Dorway Platform Inquiries')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Connect</button>
+              </div>
             </div>
           </div>
 
-          <!-- 7. CLYR -->
+          <!-- 7. CLYR Credit Health Platform -->
           <div class="brand-item tech bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between card-hover-effect">
             <div>
-              <div class="relative bg-slate-900 p-6 border-b border-slate-100 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <img src="assets/clyr-icon.svg" alt="CLYR Logo" class="h-10 w-auto object-contain rounded">
-                  <div>
-                    <div class="text-white font-extrabold text-xl tracking-tight">CLYR</div>
-                    <div class="text-teal-400 text-xs font-medium">Aapka Credit Doctor</div>
-                  </div>
-                </div>
-                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-teal-900 text-teal-200 border border-teal-700">FinTech Platform</span>
+              <div class="relative studio-packshot p-6 border-b border-slate-100 flex items-center justify-center">
+                <img src="assets/clyr-icon.svg" alt="CLYR Platform" class="h-32 w-32 object-contain rounded-2xl drop-shadow-md">
+                <span class="absolute top-3 left-3 text-[10px] font-mono font-bold text-slate-400">07 / FINANCIAL HEALTH</span>
+                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 border border-emerald-200">Plain Hinglish</span>
               </div>
 
               <div class="p-6">
@@ -968,33 +1064,43 @@
                   <h3 class="text-xl font-bold text-slate-900">CLYR</h3>
                   <span class="text-[11px] font-medium text-slate-400">clyr.in</span>
                 </div>
-                <p class="text-xs font-semibold text-teal-700 mb-3">"Credit Reports. Aapki Bhasha Mein."</p>
+                <p class="text-xs font-semibold text-emerald-700 mb-3">"Credit Health, Without the Complex English."</p>
                 
-                <!-- Operational Mission -->
-                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
-                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Consumer Relief:</strong>
-                  Translating dense multi-page credit bureau records into vernacular Hindi and English, diagnosing reporting discrepancies, and generating formal bank dispute documentation.
+                <!-- Front-of-Interface 3 Proof Points -->
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="text-[10px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Zero Jargon Vernacular</span>
+                  <span class="text-[10px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">RBI Dispute Letters</span>
+                  <span class="text-[10px] font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 px-2 py-0.5 rounded">Zero Loan Peddling</span>
                 </div>
 
-                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4 space-y-2 text-[11px] text-slate-700">
-                  <div class="flex items-center justify-between border-b border-slate-200 pb-1.5">
-                    <span class="font-semibold text-slate-800">Direct Bureau Sync:</span>
-                    <span class="text-teal-700 font-bold">60-Second OTP Fetch</span>
+                <!-- Operational Mission -->
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
+                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Relief:</strong>
+                  Translating intimidating English credit bureau reports into plain Hindi, and auto-generating RBI-compliant dispute letters to remove wrongful bank reporting entries.
+                </div>
+
+                <!-- Diagnostic Features -->
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4">
+                  <div class="text-[11px] font-bold text-slate-800 mb-2">Diagnostic Engine & Tools:</div>
+                  <div class="grid grid-cols-2 gap-2 text-[10px] mb-2">
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <div class="font-bold text-slate-800">Hindi Diagnostic</div>
+                      <div class="text-slate-500">What hurt my score?</div>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <div class="font-bold text-slate-800">Dispute Letter Bot</div>
+                      <div class="text-slate-500">RBI Banking Ombudsman Format</div>
+                    </div>
                   </div>
-                  <div class="flex items-center justify-between border-b border-slate-200 pb-1.5">
-                    <span class="font-semibold text-slate-800">Consumer Plans:</span>
-                    <span class="text-slate-800 font-bold">₹99 Basic • ₹249 Resolution</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="font-semibold text-slate-800">Jan Seva Kendra Counter:</span>
-                    <span class="text-blue-700 font-bold">₹59 Wholesale Audit Rate</span>
+                  <div class="text-[10px] text-slate-500 flex justify-between px-1">
+                    <span><strong>Integrity:</strong> Zero Loan Selling</span>
+                    <span>On-Device Privacy First</span>
                   </div>
                 </div>
 
                 <div class="flex flex-wrap gap-2 text-[10px] font-semibold text-slate-600 mb-2">
-                  <a href="https://clyr.in/" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Credit Check</a>
-                  <a href="https://clyr.in/emergency-kit" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Emergency Kit</a>
-                  <a href="https://clyr.in/#pricing" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Pricing Plans</a>
+                  <a href="https://clyr.in/how-it-works.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Diagnostic Flow</a>
+                  <a href="https://clyr.in/disputes.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">RBI Letters</a>
                 </div>
               </div>
             </div>
@@ -1004,25 +1110,23 @@
                 <span>Platform</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
-              <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20CLYR%20credit%20audit%20and%20CSC%20tie-ups." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
-                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp</span>
-              </a>
+              <div class="flex items-center gap-3">
+                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20learn%20more%20about%20the%20CLYR%20credit%20diagnostic%20platform." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>WhatsApp</span>
+                </a>
+                <button onclick="openInquiryModal('CLYR Platform Inquiries')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Connect</button>
+              </div>
             </div>
           </div>
 
-          <!-- 8. Promise -->
+          <!-- 8. Promise Personal Integrity App -->
           <div class="brand-item tech bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between card-hover-effect">
             <div>
-              <div class="relative bg-slate-950 p-6 border-b border-slate-100 flex items-center justify-between">
-                <div class="flex items-center gap-3">
-                  <img src="assets/promise-icon.png" alt="Promise App Icon" class="h-12 w-12 rounded-xl object-contain shadow">
-                  <div>
-                    <div class="text-white font-extrabold text-xl tracking-tight">Promise</div>
-                    <div class="text-slate-400 text-xs font-medium">Everyday Integrity</div>
-                  </div>
-                </div>
-                <img src="assets/promise-ios.png" alt="Promise iOS Native" class="h-14 w-auto object-contain">
+              <div class="relative studio-packshot p-6 border-b border-slate-100 flex items-center justify-center">
+                <img src="assets/promise-screen.png" alt="Promise App UI" class="h-44 w-auto object-contain rounded-xl drop-shadow-md">
+                <span class="absolute top-3 left-3 text-[10px] font-mono font-bold text-slate-400">08 / BEHAVIORAL INTEGRITY</span>
+                <span class="absolute top-3 right-3 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-100 text-indigo-800 border border-indigo-200">Zero Ads</span>
               </div>
 
               <div class="p-6">
@@ -1030,33 +1134,43 @@
                   <h3 class="text-xl font-bold text-slate-900">Promise</h3>
                   <span class="text-[11px] font-medium text-slate-400">promise.eshanura.com</span>
                 </div>
-                <p class="text-xs font-semibold text-slate-700 mb-3">"Your word is who you are."</p>
+                <p class="text-xs font-semibold text-indigo-700 mb-3">"Keep Your Word to Yourself."</p>
                 
-                <!-- Operational Mission -->
-                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
-                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Consumer Relief:</strong>
-                  Championing digital wellness through an ad-free, on-device encrypted personal vow tracking architecture that fosters habit discipline without attention-extractive mechanics.
+                <!-- Front-of-Interface 3 Proof Points -->
+                <div class="flex flex-wrap gap-1.5 mb-3.5">
+                  <span class="text-[10px] font-semibold bg-indigo-50 text-indigo-800 border border-indigo-200 px-2 py-0.5 rounded">Tactile Hold-to-Seal</span>
+                  <span class="text-[10px] font-semibold bg-indigo-50 text-indigo-800 border border-indigo-200 px-2 py-0.5 rounded">100% On-Device Data</span>
+                  <span class="text-[10px] font-semibold bg-indigo-50 text-indigo-800 border border-indigo-200 px-2 py-0.5 rounded">Zero Dopamine Traps</span>
                 </div>
 
-                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4 space-y-2 text-[11px] text-slate-700">
-                  <div class="flex items-center justify-between border-b border-slate-200 pb-1.5">
-                    <span class="font-semibold text-slate-800">Tactile Commitment:</span>
-                    <span class="text-slate-900 font-bold">"Hold to Seal" Haptic</span>
+                <!-- Operational Mission -->
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 mb-4 text-xs text-slate-700 leading-relaxed">
+                  <strong class="text-slate-900 font-bold block mb-0.5">Operational Mission & Relief:</strong>
+                  Reclaiming mental focus and self-discipline from social media algorithms. A stoic commitment companion built with tactile haptics, zero notifications spam, and local private storage.
+                </div>
+
+                <!-- Interface Features -->
+                <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-100 mb-4">
+                  <div class="text-[11px] font-bold text-slate-800 mb-2">Integrity Engine:</div>
+                  <div class="grid grid-cols-2 gap-2 text-[10px] mb-2">
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <div class="font-bold text-slate-800">Hold to Seal</div>
+                      <div class="text-slate-500">Tactile Haptic Commitment</div>
+                    </div>
+                    <div class="bg-white p-2 rounded-lg border border-slate-200">
+                      <div class="font-bold text-slate-800">Zero Cloud Telemetry</div>
+                      <div class="text-slate-500">Local SQLite Encrypted</div>
+                    </div>
                   </div>
-                  <div class="flex items-center justify-between border-b border-slate-200 pb-1.5">
-                    <span class="font-semibold text-slate-800">Longitudinal View:</span>
-                    <span class="text-slate-900 font-bold">52-Week Habit Density</span>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <span class="font-semibold text-slate-800">Data Architecture:</span>
-                    <span class="text-emerald-700 font-bold">On-Device Encrypted (0 Ads)</span>
+                  <div class="text-[10px] text-slate-500 flex justify-between px-1">
+                    <span><strong>Platform:</strong> iOS & Android PWA</span>
+                    <span>100% Private</span>
                   </div>
                 </div>
 
                 <div class="flex flex-wrap gap-2 text-[10px] font-semibold text-slate-600 mb-2">
-                  <a href="https://promise.eshanura.com/#pillars" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">The 3 Pillars</a>
-                  <a href="https://promise.eshanura.com/#soundscapes" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Soundscapes</a>
-                  <a href="https://promise.eshanura.com/#faq" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">App FAQ</a>
+                  <a href="https://promise.eshanura.com/philosophy.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Philosophy</a>
+                  <a href="https://promise.eshanura.com/privacy.html" target="_blank" rel="noopener" class="px-2 py-1 bg-slate-100 hover:bg-slate-200 rounded">Local Vault</a>
                 </div>
               </div>
             </div>
@@ -1066,10 +1180,13 @@
                 <span>Platform</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
               </a>
-              <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20inquire%20about%20Promise%20app%20collaboration." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
-                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>WhatsApp</span>
-              </a>
+              <div class="flex items-center gap-3">
+                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%2C%20I%20want%20to%20learn%20more%20about%20the%20Promise%20app." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-[11px] font-bold text-[#25D366] hover:text-[#1eb355]" title="Direct WhatsApp Inquiry">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                  <span>WhatsApp</span>
+                </a>
+                <button onclick="openInquiryModal('Promise App Collaborations')" class="text-[11px] font-semibold text-slate-500 hover:text-slate-900">Connect</button>
+              </div>
             </div>
           </div>
 
@@ -1078,81 +1195,171 @@
       </div>
     </section>
 
-    <!-- Governance & Standards -->
+    <!-- SECTION: QUALITY & STANDARDS (Corporate Rigor) -->
     <section id="standards" class="py-20 bg-slate-900 text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="max-w-3xl mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 block mb-2">Compliance & Quality Architecture</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-white tracking-tight font-normal">
+            Corporate Governance Grounded in Certified Standards
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-4 leading-relaxed">
+            We do not compromise on technical declarations. Every manufacturing run and packaging batch conforms to certified standards, backed by third-party laboratory audits, legal metrology verification, and absolute statutory transparency.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80">
+            <div class="text-emerald-400 font-extrabold text-2xl mb-2">ISO 9001:2015</div>
+            <div class="text-sm font-bold text-white mb-2">Certified Quality Systems</div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Standard operating procedures governing every raw material inspection, milling specification, heat sealing, and warehousing process.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80">
+            <div class="text-blue-400 font-extrabold text-2xl mb-2">FSSAI Central</div>
+            <div class="text-sm font-bold text-white mb-2">Central Food Safety Compliance</div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Strict laboratory verification for The Pasta Company semolina and The Nuts Company dry fruits. Zero adulterants, zero artificial food coloring.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80">
+            <div class="text-amber-400 font-extrabold text-2xl mb-2">100% Metrology</div>
+            <div class="text-sm font-bold text-white mb-2">Legal Metrology & Piece Count</div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Guaranteed carton piece counts across Bajrangi and Paatra lots. Eliminating the trade practice of short-delivering wholesale cartons.
+            </p>
+          </div>
+
+          <div class="bg-slate-800/80 rounded-2xl p-6 border border-slate-700/80">
+            <div class="text-teal-400 font-extrabold text-2xl mb-2">Biodegradable</div>
+            <div class="text-sm font-bold text-white mb-2">True Eco-Tableware Testing</div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Paatra sugarcane bagasse and pressed leaf tableware decompose naturally into organic compost within 90 days. 100% plastic-free.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: PARTNER WITH US & COMMERCIAL DESK -->
+    <section id="partner" class="py-20 bg-brandBgLight border-b border-brandBorder">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
           <div>
-            <span class="text-xs font-bold uppercase tracking-widest text-blue-400 block mb-2">Corporate Rigor & Compliance</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-6">
-              Audited Quality and Statutory Transparency
+            <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">Distribution & Trade Desk</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight font-normal mb-6">
+              Partner With Eshanura Enterprises
             </h2>
-            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-              Eshanura Enterprises Private Limited operates under strict corporate, environmental, and consumer protection protocols. From factory floor weight audits to digital data encryption, our operations protect the rights of consumers and trade partners.
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              We work with regional distributors, super-stockists, modern retail chains, and institutional procurement partners across Uttar Pradesh and Northern India.
             </p>
-
-            <div class="space-y-4">
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 font-bold">✓</div>
-                <div>
-                  <h4 class="font-bold text-white text-sm">ISO 9001:2015 Management Certification</h4>
-                  <p class="text-xs text-slate-400 mt-1">Our quality management systems ensure consistent product formulation, batch traceability, and verified packaging standards.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold">✓</div>
-                <div>
-                  <h4 class="font-bold text-white text-sm">Food Safety & Material Hygiene</h4>
-                  <p class="text-xs text-slate-400 mt-1">Strict adherence to FSSAI protocols in all food lines, with complete absence of harmful plastics or synthetic bleaching in tableware.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0 font-bold">✓</div>
-                <div>
-                  <h4 class="font-bold text-white text-sm">DPDP Act 2023 Digital Compliance</h4>
-                  <p class="text-xs text-slate-400 mt-1">All digital platforms enforce client data encryption, explicit OTP consent, and zero reselling of citizen financial or property records.</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="bg-slate-800/80 rounded-2xl p-8 border border-slate-700">
-            <h3 class="text-lg font-bold text-white mb-6 border-b border-slate-700 pb-4">Corporate Identification & Registration</h3>
             
-            <dl class="space-y-4 text-xs">
-              <div>
-                <dt class="text-slate-400 font-medium">Legal Name of the Company</dt>
-                <dd class="text-white font-semibold text-sm mt-0.5">ESHANURA ENTERPRISES PRIVATE LIMITED</dd>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start gap-3.5">
+                <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">✓</div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Guaranteed Gross Margins</h4>
+                  <p class="text-xs text-slate-500">Transparent distributor rate cards with clear territorial protections.</p>
+                </div>
               </div>
-              <div>
-                <dt class="text-slate-400 font-medium">Goods & Services Tax Identification Number (GSTIN)</dt>
-                <dd class="text-emerald-400 font-mono font-semibold text-sm mt-0.5">09AAICE5770G1ZD</dd>
+              <div class="flex items-start gap-3.5">
+                <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">✓</div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Zero Quality Deductions</h4>
+                  <p class="text-xs text-slate-500">Factory-certified packaging prevents transit damages and customer rejections.</p>
+                </div>
               </div>
-              <div>
-                <dt class="text-slate-400 font-medium">Registered Corporate Office</dt>
-                <dd class="text-slate-200 mt-0.5 leading-relaxed">
-                  908, Hathipur Uttari, Seth Ghat Road,<br>
-                  Lakhimpur-Kheri, Uttar Pradesh - 262701, India
-                </dd>
+              <div class="flex items-start gap-3.5">
+                <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 font-bold text-xs mt-0.5">✓</div>
+                <div>
+                  <h4 class="text-xs font-bold text-slate-900">Marketing & Sampling Support</h4>
+                  <p class="text-xs text-slate-500">Retail point-of-sale collaterals, counter displays, and demonstration samples.</p>
+                </div>
               </div>
-              <div>
-                <dt class="text-slate-400 font-medium">Statutory Redressal & Compliance Officer</dt>
-                <dd class="text-slate-200 mt-0.5">Gaurav Gupta (<a href="mailto:core@eshanura.com" class="text-blue-400 underline">core@eshanura.com</a>)</dd>
-              </div>
-            </dl>
+            </div>
 
-            <div class="mt-8 pt-6 border-t border-slate-700 flex flex-wrap gap-4">
-              <a href="mailto:core@eshanura.com?subject=Statutory%20or%20Corporate%20Inquiry" class="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold tracking-wide transition-colors">
-                Corporate Secretariat Contact
-              </a>
-              <button onclick="openInquiryModal('Institutional Procurement')" class="px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-semibold transition-colors">
-                Institutional Request
+            <!-- Direct Contact Hotline -->
+            <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              </div>
+              <div>
+                <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Direct Trade Desk</div>
+                <div class="text-sm font-extrabold text-slate-900">+91 98394 36346</div>
+                <div class="text-[11px] text-slate-500">care@eshanura.com • core@eshanura.com</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Trade Application Form -->
+          <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+            <div class="mb-6">
+              <h3 class="text-lg font-bold text-slate-900">Distributor & Trade Application</h3>
+              <p class="text-xs text-slate-500 mt-1">Submit your business details for prompt review by our commercial team.</p>
+            </div>
+
+            <form onsubmit="handleInquirySubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="fullName" class="block text-xs font-semibold text-slate-700 mb-1">Contact Person *</label>
+                  <input type="text" id="fullName" required placeholder="Full Name" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div>
+                  <label for="contactPhone" class="block text-xs font-semibold text-slate-700 mb-1">WhatsApp / Phone *</label>
+                  <input type="tel" id="contactPhone" required placeholder="+91 98394 36346" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="businessName" class="block text-xs font-semibold text-slate-700 mb-1">Firm / Business Name</label>
+                  <input type="text" id="businessName" placeholder="M/S Trading Company" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div>
+                  <label for="cityState" class="block text-xs font-semibold text-slate-700 mb-1">Operating District / State *</label>
+                  <input type="text" id="cityState" required placeholder="Lucknow, UP" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="contactEmail" class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+                  <input type="email" id="contactEmail" placeholder="office@firm.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                </div>
+                <div>
+                  <label for="inquiryType" class="block text-xs font-semibold text-slate-700 mb-1">Brand Category of Interest *</label>
+                  <select id="inquiryType" required class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
+                    <option value="All Consumer Goods">All FMCG Lines (Composite Distributorship)</option>
+                    <option value="The Nuts Company">The Nuts Company (Packaged Dry Fruits)</option>
+                    <option value="The Pasta Company">The Pasta Company (Durum Wheat Staples)</option>
+                    <option value="EasyCare Brooms">EasyCare (Household Brooms)</option>
+                    <option value="Paatra Eco-Serveware">Paatra (Sustainable Tableware)</option>
+                    <option value="Bajrangi Disposables">Bajrangi Disposables (Foodservice Packaging)</option>
+                    <option value="Digital Platforms">Digital Platforms (Dorway, CLYR, Promise)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="messageText" class="block text-xs font-semibold text-slate-700 mb-1">Current Distribution Network / Notes</label>
+                <textarea id="messageText" rows="3" placeholder="Tell us about your current retail counters, fleet, or warehouse setup..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 text-xs focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs tracking-wide shadow-md transition-all flex items-center justify-center gap-2">
+                <span>Submit Trade Application via WhatsApp</span>
+                <svg class="w-4 h-4 fill-current text-emerald-400" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
               </button>
-            </div>
-
+            </form>
           </div>
 
         </div>
@@ -1160,157 +1367,46 @@
       </div>
     </section>
 
-    <!-- Partner & Distribution Inquiry Section -->
-    <section id="partner" class="py-20 bg-brandBgLight border-b border-brandBorder">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="bg-white rounded-3xl p-8 sm:p-12 border border-brandBorder shadow-sm">
-          
-          <div class="text-center max-w-xl mx-auto mb-10">
-            <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">Grow With Eshanura</span>
-            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Partner With Our Operating Group</h2>
-            <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-              Whether you are an established FMCG super-stockist, regional distributor, institutional catering buyer, or CSC Jan Seva Kendra partner, our desk is ready to support your business.
-            </p>
-          </div>
-
-                    <!-- Direct WhatsApp Quick Connect Banner -->
-          <div class="mb-8 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div class="flex items-center gap-3.5">
-              <div class="w-10 h-10 rounded-full bg-[#25D366] text-white flex items-center justify-center shrink-0 shadow-sm">
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-              </div>
-              <div class="text-left">
-                <div class="text-xs font-bold text-slate-900">Prefer Direct WhatsApp Conversation?</div>
-                <div class="text-[11px] text-slate-600">Skip the form and chat directly with our commercial desk for rate cards and terms.</div>
-              </div>
-            </div>
-            <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%20Enterprises%2C%20I%20would%20like%20to%20discuss%20trade%20partnership%20and%20distribution%20opportunities."
-               target="_blank"
-               rel="noopener noreferrer"
-               class="whitespace-nowrap px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold transition-all shadow-xs flex items-center gap-2 shrink-0">
-              <span>Chat on WhatsApp (+91 98394 36346)</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </a>
-          </div>
-
-          <form id="partnerForm" onsubmit="handleInquirySubmit(event)" class="space-y-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              
-              <div>
-                <label for="fullName" class="block text-xs font-semibold text-slate-700 mb-1.5">Full Name *</label>
-                <input type="text" id="fullName" required placeholder="e.g. Rajesh Sharma" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50/50">
-              </div>
-
-              <div>
-                <label for="contactPhone" class="block text-xs font-semibold text-slate-700 mb-1.5">Phone / WhatsApp *</label>
-                <input type="tel" id="contactPhone" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50/50">
-              </div>
-
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              
-              <div>
-                <label for="contactEmail" class="block text-xs font-semibold text-slate-700 mb-1.5">Email Address</label>
-                <input type="email" id="contactEmail" placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50/50">
-              </div>
-
-              <div>
-                <label for="inquiryType" class="block text-xs font-semibold text-slate-700 mb-1.5">Interest Category *</label>
-                <select id="inquiryType" required class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50/50">
-                  <option value="The Nuts Company Distribution (Packaged Dry Fruits)">The Nuts Company (Distributor / Retail)</option>
-                  <option value="The Pasta Company Distribution (100% Durum Semolina)">The Pasta Company (Distributor / Kirana)</option>
-                  <option value="EasyCare Household Hardware Stockist (Hanging Loop Brooms)">EasyCare Brooms (Stockist / Wholesale)</option>
-                  <option value="Paatra Sustainable Tableware Trade (Zero Plastic Lining)">Paatra Eco-Serveware (Catering / HORECA)</option>
-                  <option value="Bajrangi Disposables Wholesale (Full Count & Size)">Bajrangi Disposables (Bulk Foodservice)</option>
-                  <option value="CLYR Jan Seva Kendra / Partner Counter">CLYR FinTech (CSC / Jan Seva Kendra Counter)</option>
-                  <option value="Dorway Commercial or Property Listing">Dorway PropTech Collaboration</option>
-                  <option value="Institutional Procurement or Supply">Institutional Bulk Procurement</option>
-                  <option value="Other Corporate Inquiry">Other Corporate Matter</option>
-                </select>
-              </div>
-
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <label for="cityState" class="block text-xs font-semibold text-slate-700 mb-1.5">City & State *</label>
-                <input type="text" id="cityState" required placeholder="e.g. Lucknow, Uttar Pradesh" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50/50">
-              </div>
-
-              <div>
-                <label for="businessName" class="block text-xs font-semibold text-slate-700 mb-1.5">Firm or Entity Name</label>
-                <input type="text" id="businessName" placeholder="e.g. Shree Balaji Traders" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50/50">
-              </div>
-            </div>
-
-            <div>
-              <label for="messageText" class="block text-xs font-semibold text-slate-700 mb-1.5">Estimated Requirements / Note</label>
-              <textarea id="messageText" rows="3" placeholder="Tell us about your distribution territory or purchasing requirement..." class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-slate-50/50"></textarea>
-            </div>
-
-            <button type="submit" class="w-full py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm tracking-wide shadow-md transition-all flex items-center justify-center gap-2">
-              <span>Send Trade Inquiry via WhatsApp</span>
-              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.54 1.861.855 2.796.855 3.18 0 5.767-2.587 5.767-5.766.001-3.182-2.585-5.742-5.767-5.742zm3.334 8.353c-.145.41-.741.777-1.026.822-.27.043-.623.076-1.745-.39-1.428-.59-2.338-2.023-2.408-2.118-.072-.096-.583-.775-.583-1.479 0-.703.368-1.05.5-1.196.13-.146.284-.183.379-.183.096 0 .192.001.275.006.088.005.207-.033.324.249.12.288.411 1.002.447 1.076.036.073.06.16.012.257-.048.096-.072.156-.144.241-.072.084-.153.189-.218.254-.073.072-.15.15-.065.296.085.146.377.621.809 1.006.557.495 1.027.649 1.173.722.146.073.232.061.318-.037.085-.098.364-.424.462-.57.097-.145.195-.121.326-.073.13.048.825.389.967.461.142.072.237.108.272.17.035.061.035.353-.11.763z"/></svg>
-            </button>
-            <p class="text-[11px] text-center text-slate-400">Directly opens pre-formatted WhatsApp chat with Eshanura Corporate Desk (+91 98394 36346).</p>
-          </form>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Headquarters & Direct Contact Section -->
+    <!-- SECTION: CORPORATE HEADQUARTERS & CONTACT -->
     <section id="contact" class="py-20 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="max-w-3xl mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-blue-600 block mb-2">Registered Entity & Governance</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-slate-900 tracking-tight font-normal">
+            Corporate Headquarters & Secretarial Desk
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">Official corporate offices and trade contact points for Eshanura Enterprises Private Limited.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          <div class="p-8 rounded-2xl bg-brandBgLight border border-brandBorder">
-            <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold mb-4">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-            </div>
-            <h3 class="text-base font-bold text-slate-900 mb-1">Registered Office</h3>
-            <p class="text-xs text-slate-500 mb-3">Principal Administrative Headquarters</p>
-            <p class="text-xs text-slate-700 leading-relaxed font-medium">
-              Eshanura Enterprises Private Limited<br>
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Registered Office</div>
+            <div class="text-sm font-bold text-slate-900 mb-2">Eshanura Enterprises Private Limited</div>
+            <p class="text-xs text-slate-600 leading-relaxed">
               908, Hathipur Uttari, Seth Ghat Road,<br>
               Lakhimpur-Kheri, Uttar Pradesh - 262701, India
             </p>
           </div>
 
-          <div class="p-8 rounded-2xl bg-brandBgLight border border-brandBorder">
-            <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            </div>
-            <h3 class="text-base font-bold text-slate-900 mb-1">Corporate Communications</h3>
-            <p class="text-xs text-slate-500 mb-3">Official Mailboxes</p>
-            <div class="space-y-1.5 text-xs">
-              <div><span class="text-slate-400">Core Secretarial:</span> <a href="mailto:core@eshanura.com" class="text-blue-600 font-semibold hover:underline">core@eshanura.com</a></div>
-              <div><span class="text-slate-400">Customer & Trade Care:</span> <a href="mailto:care@eshanura.com" class="text-blue-600 font-semibold hover:underline">care@eshanura.com</a></div>
-              <div class="flex items-center justify-between pt-1">
-                <div><span class="text-slate-400">Direct Desk:</span> <a href="tel:+919839436346" class="text-slate-900 font-bold hover:underline">+91 98394 36346</a></div>
-                <a href="https://wa.me/919839436346?text=Namaste%20Eshanura%20Enterprises%2C%20I%20would%20like%20to%20connect%20with%20your%20Headquarters%20Desk." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 hover:bg-emerald-100 text-[#25D366] text-[11px] font-bold transition-colors border border-emerald-200">
-                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                  <span>WhatsApp</span>
-                </a>
-              </div>
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Executive Secretariat</div>
+            <div class="text-xs text-slate-600 space-y-2">
+              <div><strong class="text-slate-800">Core Secretarial:</strong> <a href="mailto:core@eshanura.com" class="text-blue-600 hover:underline">core@eshanura.com</a></div>
+              <div><strong class="text-slate-800">Customer & Trade Care:</strong> <a href="mailto:care@eshanura.com" class="text-blue-600 hover:underline">care@eshanura.com</a></div>
+              <div><strong class="text-slate-800">Direct Desk:</strong> <a href="tel:+919839436346" class="text-slate-900 font-semibold">+91 98394 36346</a></div>
             </div>
           </div>
 
-          <div class="p-8 rounded-2xl bg-brandBgLight border border-brandBorder">
-            <div class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold mb-4">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            </div>
-            <h3 class="text-base font-bold text-slate-900 mb-1">Trade & Distributor Desk</h3>
-            <p class="text-xs text-slate-500 mb-3">Prompt Response Window</p>
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+            <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Trade Window</div>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">
               Distributor inquiries and wholesale rate card requests are evaluated by our commercial desk within 24 business hours.
             </p>
-            <button onclick="openInquiryModal('Direct Commercial Desk')" class="text-xs font-bold text-slate-900 hover:text-blue-600 flex items-center gap-1">
-              <span>Open Trade Inquiry Window</span> &rarr;
+            <button onclick="openInquiryModal('Direct Commercial Window')" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+              <span>Open Trade Inquiry Window</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </button>
           </div>
 
@@ -1321,67 +1417,60 @@
 
   </main>
 
-  <!-- Corporate Footer -->
-  <footer class="bg-white border-t border-brandBorder pt-16 pb-12 text-slate-600 text-xs">
+  <!-- Global Corporate Footer -->
+  <footer class="bg-white border-t border-brandBorder py-12 text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-200">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
         
-        <!-- Brand identity -->
-        <div class="lg:col-span-2 space-y-4">
-          <img src="assets/eshanura-logo.png" alt="Eshanura Corporate Logo" class="h-9 w-auto">
-          <p class="text-xs text-slate-500 max-w-sm leading-relaxed">
+        <div class="md:col-span-1">
+          <img src="assets/eshanura-logo.png" alt="Eshanura Logo" class="h-9 w-auto object-contain mb-4">
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
             Eshanura Enterprises Private Limited is a diversified Indian operating house, creating honest physical essentials and digital utilities for everyday life.
           </p>
-          <div class="text-[11px] text-slate-400 space-y-1">
-            <div><span class="font-semibold text-slate-600">GSTIN:</span> 09AAICE5770G1ZD</div>
-            <div><span class="font-semibold text-slate-600">Certification:</span> ISO 9001:2015 Quality Management</div>
+          <div class="text-[11px] text-slate-400 space-y-1 font-mono">
+            <div>GSTIN: 09AAICE5770G1ZD</div>
+            <div>Certification: ISO 9001:2015 Quality Management</div>
           </div>
         </div>
 
-        <!-- Consumer Division Links -->
         <div>
-          <h4 class="font-bold text-slate-900 uppercase tracking-wider text-[11px] mb-3">Consumer Goods</h4>
-          <ul class="space-y-2 text-xs">
-            <li><a href="https://nuts.eshanura.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">The Nuts Company</a></li>
-            <li><a href="https://pasta.eshanura.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">The Pasta Company</a></li>
-            <li><a href="https://easycare.eshanura.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">EasyCare Brooms</a></li>
-            <li><a href="https://paatra.web.app" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">Paatra Eco-Serveware</a></li>
-            <li><a href="https://bajrangi-disposables.web.app" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">Bajrangi Disposables</a></li>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Consumer Goods</h4>
+          <ul class="space-y-2">
+            <li><a href="https://nuts.eshanura.com" target="_blank" rel="noopener" class="hover:text-blue-600">The Nuts Company</a></li>
+            <li><a href="https://pasta.eshanura.com" target="_blank" rel="noopener" class="hover:text-blue-600">The Pasta Company</a></li>
+            <li><a href="https://easycare.eshanura.com" target="_blank" rel="noopener" class="hover:text-blue-600">EasyCare Brooms</a></li>
+            <li><a href="https://paatra.web.app" target="_blank" rel="noopener" class="hover:text-blue-600">Paatra Eco-Serveware</a></li>
+            <li><a href="https://bajrangi-disposables.web.app" target="_blank" rel="noopener" class="hover:text-blue-600">Bajrangi Disposables</a></li>
           </ul>
         </div>
 
-        <!-- Digital Division Links -->
         <div>
-          <h4 class="font-bold text-slate-900 uppercase tracking-wider text-[11px] mb-3">Digital Platforms</h4>
-          <ul class="space-y-2 text-xs">
-            <li><a href="https://dorway.in" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">Dorway Renting</a></li>
-            <li><a href="https://clyr.in" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">CLYR Credit Doctor</a></li>
-            <li><a href="https://promise.eshanura.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600">Promise App</a></li>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Digital Platforms</h4>
+          <ul class="space-y-2">
+            <li><a href="https://dorway.in" target="_blank" rel="noopener" class="hover:text-blue-600">Dorway Renting</a></li>
+            <li><a href="https://clyr.in" target="_blank" rel="noopener" class="hover:text-blue-600">CLYR Credit Doctor</a></li>
+            <li><a href="https://promise.eshanura.com" target="_blank" rel="noopener" class="hover:text-blue-600">Promise App</a></li>
           </ul>
         </div>
 
-        <!-- Corporate & Governance -->
         <div>
-          <h4 class="font-bold text-slate-900 uppercase tracking-wider text-[11px] mb-3">Corporate & Trade</h4>
-          <ul class="space-y-2 text-xs">
-            <li><a href="#about" class="hover:text-blue-600">About Eshanura</a></li>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">Corporate & Trade</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-blue-600">About Eshanura</a></li>
+            <li><a href="#audit" class="hover:text-blue-600">Brand & Packaging Audit</a></li>
             <li><a href="#standards" class="hover:text-blue-600">Quality & Standards</a></li>
-            <li><button onclick="openInquiryModal('Distributor Network')" class="text-left hover:text-blue-600">Distributor Network</button></li>
-            <li><a href="mailto:core@eshanura.com" class="hover:text-blue-600">Corporate Secretary</a></li>
+            <li><a href="#partner" class="hover:text-blue-600">Distributor Network</a></li>
+            <li><a href="#contact" class="hover:text-blue-600">Corporate Secretary</a></li>
             <li><a href="mailto:care@eshanura.com" class="hover:text-blue-600">Grievance Desk</a></li>
-            <li><a href="https://wa.me/919839436346?text=Namaste%20Eshanura%20Enterprises%2C%20I%20would%20like%20to%20connect%20via%20WhatsApp." target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-semibold hover:underline flex items-center gap-1.5"><svg class="w-3.5 h-3.5 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg><span>WhatsApp Desk</span></a></li>
           </ul>
         </div>
 
       </div>
 
-      <!-- Copyright & Bottom info -->
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
-        <div>
-          © 2026 Eshanura Enterprises Private Limited. All rights reserved.
-        </div>
-        <div class="flex items-center gap-6">
+      <div class="pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <div>&copy; 2026 Eshanura Enterprises Private Limited. All rights reserved.</div>
+        <div class="flex items-center gap-4">
           <span>Registered in Lakhimpur-Kheri (U.P.)</span>
           <span>•</span>
           <span>ISO 9001:2015</span>
@@ -1393,8 +1482,8 @@
     </div>
   </footer>
 
-  <!-- Modal Dialog for Partner Inquiry -->
-  <div id="inquiryModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+  <!-- Reusable Trade Inquiry Modal with Direct WhatsApp Linking -->
+  <div id="inquiryModal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
     <div class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative animate-in fade-in zoom-in-95 duration-150">
       
       <button onclick="closeInquiryModal()" aria-label="Close dialog" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700">
